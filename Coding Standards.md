@@ -1,4 +1,15 @@
-## <h1 dir='rtl'> استاندارهای کدنویسی:</h1>
+<h1 dir='rtl'> استاندارهای کدنویسی:</h1>
+
+<h2 dir="rtl">اصول اولیه</h2>
+
+<P dir="rtl">در نوشتن کد اصول زیر حتما رعایت شود</P>
+
+- [SOLID](https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-Sharp/)
+- [KISS](https://www.c-sharpcorner.com/article/k-i-s-s-software-design-principle/)
+-  Dry
+   - [1](https://www.c-sharpcorner.com/article/dont-repeat-yourselfdry-design-principle/)
+   - [2](https://www.c-sharpcorner.com/article/dont-repeat-yourselfdry-part-2/)
+   - [3](https://www.c-sharpcorner.com/article/dont-repeat-yourselfdry-part-three/)
 
 <h2 dir='rtl'>کامنت‌گذاری:</h2>
 
@@ -22,17 +33,18 @@
 		/// <param name="connectionString"> Connection String  should contain
 		///Database server and username and password </param>
 		public void SetDatabaseConnection(string connectionString)
-		{}
+		{
+		}
 	}
-
 <p dir='rtl'>
 در کامنت گذاری برای Api ها حتما، نمونه Sample هم جزو کامنت طبق استاندارد قرار بگیرد.  
     برای نمونه از لینک زیر استفاده کنید
 </p>
 
-https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio
+[getting-started-with-swashbuckle](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio)
 
 ---
+
 <h2 dir='rtl'>نام گذاری</h2>
 <p dir='rtl'>
 نام متغیرها، متدها، اینترفیس‌ها، کلاس‌ها و ... باید بدرستی انتخاب شود. نام انتخابی باید معنی کاری که قرار است انجام شود را داشته باشد. 
@@ -80,6 +92,12 @@ https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swas
 	{
 	}
 
+<h4 dir="rtl">نام فایل ها مشابه نام کلاس ها باشد</h4>
+
+
+
+<h4 dir="rtl">namespace ها را با یک ساختار واضح سازماندهی کنید</h4>
+
 <h2 dir="rtl">Layout</h2>
 <ol dir="rtl">
 	<li>در هر خط از کد یک دستور نوشته شود.</li>
@@ -88,17 +106,29 @@ https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swas
 	<li>برای دستورات If یا For که یک دستور را انجام می‌دهند هم از {} برای مشخص کردن بلوک کد استفاده شود.</li>
 </ol>
 
+> 
+ 	class Program
+ 	{
+ 		static void Main(string[] args)
+ 		{
+ 		}
+ 	}
+
 <h2 dir="rtl">Language Specific</h2>
+
+<h4 dir="rtl">در نام گذاری enum از نام های مفرد استفاده کنید</h4>
+
 <ul dir="rtl">
 	<li>در استفاده از نوع‌های ابتدایی مثل int,string از معادل .net (Int,String) استفاده نشود.</li>
 	<li>برای ساخت string از متغیرها یا از تابع format استفاده شود یا از $ استفاده گردد.</li>
 </ul>
 
->
-    string displayName = $"{nameList[n].LastName}, {nameList[n].FirstName}";
 
 >
-    string displayName = string.Format("{0} , {1}", nameList[n].LastName, nameList[n]. FirstName);
+	string displayName = $"{nameList[n].LastName}, {nameList[n].FirstName}";
+
+>
+	string displayName = string.Format("{0} , {1}", nameList[n].LastName, nameList[n]. FirstName);
 
 <h4 dir="rtl">استفاده از var برای نوع متغیر فقط در صورتی استفاده شود که از سمت راست نوع مشخص باشد یا نوع اهمیت نداشته باشد.</h4>
 <h5 dir="rtl">در حلقه‌های foreach بهتر است از Var استفاده نشود.</h5>
@@ -121,6 +151,8 @@ https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swas
 
 >
 	var instance1 = new ExampleClass();
+
+>
 	var instance3 = new ExampleClass 
 		{ 
 		Name = "Desktop",
