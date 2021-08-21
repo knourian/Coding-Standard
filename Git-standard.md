@@ -16,6 +16,7 @@ For Further Study git look at [Git Book](https://git-scm.com/book/en/v2/Getting-
 # Branch
 
 
+
 Whenever You wanted to Modify code Create a branch
 
 `git branch <branch-name>`
@@ -23,6 +24,8 @@ Whenever You wanted to Modify code Create a branch
 `git checkout<branch-name> `
 
 and do your work Commit and push to that branch.
+
+
 
 Submit a Pull Request on That branch and wait to code being reviewed 
 
@@ -41,5 +44,9 @@ Ref #2: [Pull request](https://www.atlassian.com/git/tutorials/making-a-pull-req
 Each project may be consisting of other projects, in order to maintain each of them separately we use git sub modules.
 
 Please Read reference 
+
+to clone a project with submodules use
+>
+	git clone --recurse-submodules <repo name>
 
 Ref : [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
