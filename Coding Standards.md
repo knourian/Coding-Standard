@@ -11,7 +11,7 @@
    - [2](https://www.c-sharpcorner.com/article/dont-repeat-yourselfdry-part-2/)
    - [3](https://www.c-sharpcorner.com/article/dont-repeat-yourselfdry-part-three/)
 
-<h2 dir='rtl'>کامنت‌گذاری:</h2>
+<h2 dir='rtl'>کامنت‌گذاری</h2>
 
 <p dir='rtl'>
 در تعریف کلاس‌ها، متدها حتما بشکل زیر توضیحات اضافه شوند، جهت دسترسی کافی است قبل از تعریف متد از /// و کلید tab استفاده شود و سپس موارد مورد نیاز تکمیل شود.
@@ -160,9 +160,17 @@
 		Location = "Redmond", 
 		Age = 2.3 
 		};
+  <h2 dir="rtl">تست نویسی</h2>
+  <p dir="rtl">
+  برای چگونگی تست نویسی به لینک زیر مراجعه کنید: 
+  </p>
+  
+  https://www.c-sharpcorner.com/article/unit-testing-with-xunit-and-moq-in-asp-net-core
+  
+<h2 dir="rtl">جهت مطالعه بیشتر به لینک های زیر مراجعه کنید.</h2>
 
-<h2 dir="rtl">جهت مطالعه بیشتر به لینک های زیر مراجعه کنید.</h4>
-
+https://csharpcodingguidelines.com
+  
 https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions
 
 https://github.com/ktaranov/naming-convention/blob/master/C%23%20Coding%20Standards%20and%20Naming%20Conventions.md
